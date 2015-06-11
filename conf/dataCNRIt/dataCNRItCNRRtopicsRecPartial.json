@@ -1,0 +1,20 @@
+{
+   "StoreConfiguration":{
+      "KindOfStore":"JENATDB",
+      "RDFDocumentURIs":[
+
+      ],
+      "TDBDirectory":"data/CNRIT/TDB-0.8.9/CNRR/"
+   },
+   "ContextConfiguration":{
+      "ContextFilePath":"conf/dataCNRIt/topicsRec.ctx"
+   },
+   "InstanceConfiguration":{
+      "InstanceURIsClass":"application.dataCNRIt.GetResearcher"
+   },
+   "OutputConfiguration":{
+      "KindOfOutput":"JSONOrderedResultPartials",
+      "NumberOfOrderedResult" : "20",
+      "FilePath":"conf/dataCNRIt/topicsRecPArt.json"
+   }
+}

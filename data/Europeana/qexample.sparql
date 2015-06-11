@@ -1,0 +1,1 @@
+select ?p ?o where  {graph ?g { <http://data.europeana.eu/proxy/europeana/00902/E08325B1F2649D261AC2B8A7F81A68075E787474> ?p ?o}}

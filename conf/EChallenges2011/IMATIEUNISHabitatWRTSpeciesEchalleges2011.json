@@ -1,0 +1,22 @@
+{
+   "StoreConfiguration":{
+      "KindOfStore":"JENATDB",
+      "RDFDocumentURIs":[
+         "http://www.w3.org/2004/02/skos/core#",
+         "http://www.w3.org/2000/01/rdf-schema#",
+         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+         "http://www.w3.org/2002/07/owl#"
+      ],
+      "TDBDirectory":"data/EUNISIMATI/TDB-0.8.9/"
+   },
+   "ContextConfiguration":{
+      "ContextFilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.ctx"
+   },
+   "InstanceConfiguration":{
+      "InstanceURIsClass":"application.EChallenges2011.InstancesForEUNISSimilarityEchallenges"
+   },
+   "OutputConfiguration":{
+      "KindOfOutput":"CVSFile",
+      "FilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.cvs"
+   }
+}

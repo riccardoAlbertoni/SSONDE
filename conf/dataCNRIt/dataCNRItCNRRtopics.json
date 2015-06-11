@@ -1,0 +1,19 @@
+{
+   "StoreConfiguration":{
+      "KindOfStore":"JENATDB",
+      "RDFDocumentURIs":[
+
+      ],
+      "TDBDirectory":"data/CNRIT/TDB-0.8.9/CNRR/"
+   },
+   "ContextConfiguration":{
+      "ContextFilePath":"conf/dataCNRIt/topics.ctx"
+   },
+   "InstanceConfiguration":{
+      "InstanceURIsClass":"application.dataCNRIt.GetResearcher"
+   },
+   "OutputConfiguration":{
+      "KindOfOutput":"CVSFile",
+      "FilePath":"conf/dataCNRIt/topics.cvs"
+   }
+}

@@ -1,0 +1,20 @@
+{
+   "StoreConfiguration":{
+      "KindOfStore":"JENATDBReasoner",
+      "RDFDocumentURIs":[
+
+      ],
+      "TDBDirectory":"data/CNRIT/TDB-0.8.9/CNRR/",
+      "JENARulesURI":"conf/dataCNRIt/CoauthorReflexive.rule"
+   },
+   "ContextConfiguration":{
+      "ContextFilePath":"conf/dataCNRIt/coauthor.ctx"
+   },
+   "InstanceConfiguration":{
+      "InstanceURIsClass":"application.dataCNRIt.GetResearcher"
+   },
+   "OutputConfiguration":{
+      "KindOfOutput":"CVSFile",
+      "FilePath":"conf/dataCNRIt/dataCNRItCNRRcoauthorReflexive.cvs"
+   }
+}

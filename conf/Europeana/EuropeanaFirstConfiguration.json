@@ -1,0 +1,19 @@
+{
+   "StoreConfiguration":{
+      "KindOfStore":"JENATDB",
+      "RDFDocumentURIs":[
+
+      ],
+      "TDBDirectory":"data/Europeana/TDB/"
+   },
+   "ContextConfiguration":{
+      "ContextFilePath":"conf/Europeana/hasMet.ctx"
+   },
+   "InstanceConfiguration":{
+      "InstanceURIsClass":"application.Europeana.GetEuropeanaCHO"
+   },
+   "OutputConfiguration":{
+      "KindOfOutput":"CVSFile",
+      "FilePath":"conf/Europeana/CHOhasMET.cvs"
+   }
+}

@@ -1,0 +1,10 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/dc/terms/">
+  <rdf:Description rdf:about="http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA6455">
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Alternative_education"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Pedagogy"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Education"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Educational_technology"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,20 @@
+{
+   "StoreConfiguration":{
+      "KindOfStore":"JENATDB",
+      "RDFDocumentURIs":[
+
+      ],
+      "TDBDirectory":"data/CNRIT/TDB-0.8.9/CNRR/"
+   },
+   "ContextConfiguration":{
+      "ContextFilePath":"conf/dataCNRIt/ComplexContextResearchInterest/CCRIPub.ctx"
+   },
+   "InstanceConfiguration":{
+      "InstanceURIsClass":"application.dataCNRIt.GetResearcherIMATIplusCoauthor"
+   },
+   "OutputConfiguration":{
+      "KindOfOutput":"JSONOrderedResult",
+      "NumberOfOrderedResult":"10",
+      "FilePath":"conf/dataCNRIt/ComplexContextResearchInterest/CRRIPub.res.json"
+   }
+}

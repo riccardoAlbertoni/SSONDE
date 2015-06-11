@@ -1,0 +1,14 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/dc/terms/">
+  <rdf:Description rdf:about="http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA6398">
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:3D_imaging"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Geometry"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:3D_computer_graphics"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Technical_drawing"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Computer-aided_design"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Design"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Computer-aided_design_software"/>
+    <j.0:subject rdf:resource="http://dbpedia.org/resource/Category:Computer_graphics"/>
+  </rdf:Description>
+</rdf:RDF>

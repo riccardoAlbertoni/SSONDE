@@ -1,0 +1,22 @@
+Select distinct ?x ?z  where 
+{ graph ?h
+	{
+		 ?x <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#autoreCNRDi>  ?y.
+			 ?x <http://www.w3.org/2000/01/rdf-schema#label> ?z.
+FILTER  (EXISTS{ 
+		 {?x <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore>   <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleEsterno/ID226> } 
+		UNION 
+		 {?x <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore>   <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA340>}
+		UNION
+ 		 {?x <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore> <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA29135>}
+		UNION
+ 		 {?x <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore> <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA7545>}
+	UNION
+ 		 {?x <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore> <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA6455>} . 
+          Filter  Not Exists {?x <http://purl.org/dc/terms/subject> ?m} 
+          })
+			 
+	}
+}
+
+

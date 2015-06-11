@@ -1,0 +1,6 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dc:  <http://purl.org/dc/terms/>
+PREFIX pub: <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#>
+[owl:Thing]->{{},{ (pub:coautore, Inter), (pub:autoreCNRDi, Inter),(dc:subject, Simil)}}
+[owl:Thing, dc:subject]-> {{},{(skos:broader, Inter)}} 

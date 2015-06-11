@@ -1,0 +1,8 @@
+Select distinct *  where 
+{ Graph <http://manuallyadded/Albertoni/dc:subject/Bianca>
+	{
+		  <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA6398> ?p  ?y
+			 
+	}
+}
+

@@ -1,0 +1,8 @@
+#List rules = Rule.rulesFromURL("file:myfile.rules");
+@prefix  wiki: <http://semanticweb.org/id/>. 
+@prefix  pub: <http://www.cnr.it/ontology/cnr/pubblicazioni.owl#>.
+
+[r1b:   (?y pub:coautore ?z)-> (?y pub:coautore ?y)]
+
+
+

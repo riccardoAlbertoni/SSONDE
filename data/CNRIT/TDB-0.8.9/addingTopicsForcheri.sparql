@@ -1,0 +1,4 @@
+CONSTRUCT   { <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA6455> <http://purl.org/dc/terms/subject> ?yy }
+WHERE       { { <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleEsterno/ID238> <http://purl.org/dc/terms/subject> ?yy} UNION 
+ {<http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleEsterno/ID186> <http://purl.org/dc/terms/subject> ?yy}
+ }

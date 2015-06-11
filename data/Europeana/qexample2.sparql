@@ -1,0 +1,3 @@
+ PREFIX edm: <http://www.europeana.eu/schemas/edm/> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?x WHERE { graph ?g {{?x ?p ?o} FILTER(regex(STR(?x),"^http://data.europeana.eu/proxy/europeana/"))}}

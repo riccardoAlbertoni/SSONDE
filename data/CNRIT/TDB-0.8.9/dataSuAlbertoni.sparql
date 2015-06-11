@@ -1,0 +1,8 @@
+Select distinct *  where 
+{ graph ?h
+	{
+		  <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleEsterno/ID226> ?p  ?y
+			 
+	}
+}
+

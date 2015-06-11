@@ -1,0 +1,8 @@
+#List rules = Rule.rulesFromURL("file:myfile.rules");
+@prefix pubb: <www.cnr.it/pubblicazioni.owl#>.
+@prefix  wiki: <http://semanticweb.org/id/>. 
+@prefix  skos: <http://www.w3.org/2004/02/skos/core#>.
+
+[r1b:  (?x pubb:coautore ?y) -> (?y pubb:coautore ?x)]
+
+

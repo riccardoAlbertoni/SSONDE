@@ -1,0 +1,81 @@
+= How to download the RDF statements =
+
+
+The RDF statements is stored in a local repository.
+There are different strategies to prepare a local copy one or more dataset:
+ * [RDF_statements_download#RDF_dump RDF dumps];
+ * [RDF_statements_download#Dereferentiating_a_list_of_URI Dereferentiating a list of URI];
+ * [http://code.google.com/p/ssonde/wiki/RDF_statements_download#Crawling_the_information_from_WWW Crawling the information from WWW].
+The latest is particularly interesting working on Linked Data and it is detailed below.
+
+== RDF dump ==
+RDF Statements can be uploaded in a TDB store by exploiting the command tdbloader provided by TDB/JENA. (http://incubator.apache.org/jena/documentation/tdb/commands.html ) 
+
+
+===Example 1: RDF dump===
+Let consider the dump !DumpEunisHabitat20090414.rdf and let suppose to upload the store placed in store/EUNISIMATI working under UNIX like system
+
+{{{
+tdbloader -loc store/EUNISIMATI DumpEunisHabitat20090414.rdf 
+}}}
+
+== Dereferentiating a list of URI ==
+It is possible to load RDF statement dereferentiating a list of URI, inserting the URI in the JSON configuration file under "RDFDocumentURIs".  
+In the case of JENAMEM store that results in the downloading of the rdf fragment associated to the URI, when working in JENATDB/SDB retrieved fragments are included in the configured store.
+
+== Crawling the information from WWW ==
+RDF statements can be downloaded by crawling them from the linked data, and storing them in a TDB JENA store.
+Two tools are particularly useful for this purpose:
+ * [http://jena.apache.org/documentation/serving_data/index.html Fuseki-0.2.0], Fuseki is a SPARQL server. It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. It can be adopted as front end for accessing TDB JENA Store.
+ * [http://code.google.com/p/ldspider/ LDSpider], It provides a web crawling framework for the Linked Data web. LDSpider traverses the Web of Linked Data by following RDF links between data items, it supports different crawling strategies and allows crawled data to be stored either in files or in an RDF store ([RDF_statements_download#Isele_et_al Isele Et Al 2010]).
+
+=== Example 2: crawling information from WWW ===
+Supposing to download the LDSpider and Fuseki Java jars , and to install them under  a directory  terraCognita, respectively in terraCognita/LDSpider/ and terraCognita/Fuseki-0.2.0/ .  It is possible to combine the two in order to create a TDB JENA store with data crawled in the web working under UNIX like system replicating the following steps (replace XXX with a name indicating the kind of information you are considering, e.g., EUNISspecies  or CNRITdata ):
+
+
+1. Create Fuseki configuration file in terraCognita/Fuseki-0.2.0/, e.g. XXX.ttl as it follows:
+{{{
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+ 
+[] ja:loadClass "com.hp.hpl.jena.tdb.TDB" .
+tdb:DatasetTDB  rdfs:subClassOf  ja:RDFDataset .
+tdb:GraphTDB    rdfs:subClassOf  ja:Model .
+
+<#dataset> rdf:type      tdb:DatasetTDB ;
+     tdb:location "XXX" ;
+	tdb:unionDefaultGraph true ;
+}}}
+
+2.Activate the Fuseki server by the following command line in terraCognita/Fuseki-0.2.0/ enabling the SPARQL update service on the dataset /CNR
+{{{
+./fuseki-server --update --desc XXX.ttl /XXX
+}}}
+
+3. Create a list of seeds in a text file from which the crawler can starts, for example, the following instruction typed in the directory terraCognita/ creates a file XXX.txt containing the one only URI from which to start:
+{{{
+echo "http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleEsterno/ID226" >XXX.txt
+}}}
+
+4. Start crawling by typing in the UNIX like shell , 
+{{{
+java -jar ./LDSpider/ldspider-1.1e.jar -s XXX.txt  -oe "http://localhost:3030/XXX/update"
+}}}
+it is possible to limit the list of properties to be traversed specifying them by the option –f, for example
+{{{
+java -jar ./LDSpider/ldspider-1.1e.jar  -b 5 -1 -f http://www.cnr.it/ontology/cnr/pubblicazioni.owl#autoreCNRDi -f http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore -f http://purl.org/dc/terms/subject -f http://www.w3.org/2004/02/skos/core#broader  -s seedDATACNRIT.txt  -oe "http://localhost:3030/XXX/update"
+}}}
+
+5.When the crawled information is store in a TDB JENA store in the directory CNR,  it can be queried by TDB query tools, for example by
+{{{
+tdbquery  --loc=XXX/ "Select distinct ?x  where { graph ?g { ?x ?p  ?y}}" 
+}}}
+
+
+
+==References ==
+
+===Isele et al=== 
+Isele, R., Umbrich, J., Bizer, C., & Harth, A. (2010). _LDspider: An open-source crawling framework for the Web of Linked Data_. Proceedings of 9th International Semantic Web Conference (ISWC 2010) Posters and Demos, 6-9. Retrieved from [http://www.wiwiss.fu-berlin.de/en/institute/pwo/bizer/research/publications/IseleHarthUmbrichBizer-LDspider-Poster-ISWC2010.pdf]

@@ -1,0 +1,5 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dc:  <http://purl.org/dc/terms/>
+[owl:Thing]->{{(dc:example, Count)},{(dc:subject, Simil, 50), (dc:example2, Count), (dc:example3, Count)}}
+[owl:Thing, dc:subject]-> {{},{(skos:broader, Inter)}} 

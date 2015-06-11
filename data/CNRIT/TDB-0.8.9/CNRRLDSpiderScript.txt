@@ -1,0 +1,1 @@
+java -jar ./LDSpider/ldspider-1.1e.jar  -b 5 -1 -f http://www.cnr.it/ontology/cnr/pubblicazioni.owl#autoreCNRDi -f http://www.cnr.it/ontology/cnr/pubblicazioni.owl#coautore -f http://purl.org/dc/terms/subject -f http://www.w3.org/2004/02/skos/core#broader  -s seedDATACNRIT.txt  -oe "http://localhost:3030/CNRR/update"

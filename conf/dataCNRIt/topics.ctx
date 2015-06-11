@@ -1,0 +1,4 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX swrc: <http://swrc.ontoware.org/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+[owl:Thing]->{{},{(http://purl.org/dc/terms/subject, Inter)}}

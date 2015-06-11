@@ -1,0 +1,6 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX swrc: <http://swrc.ontoware.org/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dc:  <http://purl.org/dc/terms/>
+[owl:Thing]->{{},{(dc:subject, Simil)}}
+[owl:Thing, dc:subject]-> {{},{(skos:broader, Inter)}} 
