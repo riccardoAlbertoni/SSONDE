@@ -263,7 +263,7 @@ Albertoni, R., & De Martino, M. (2010). _Semantic Similarity and Selection of Re
 
 ### Albertoni & De Martino, 2011
 Albertoni, R., & De Martino, M. (2011). _Semantic Technology to Exploit Digital Content Exposed as Linked Data_. In P. Cunningham & M. Cunningham (Eds.), eChallenges e-2011 (pp. 1-8). IIMC International Information Management Corporation, 2011 ISBN: 978-1-905824-27-4.
-
+ 
 
 
 
