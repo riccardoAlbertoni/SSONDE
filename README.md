@@ -1,4 +1,5 @@
 
+
 # GETTING STARTED USING SSONDE
 SSONDE is a framework to assess context dependent and asymmetric similarity on entities exposed on the linked data. It is developed in Java relying on JENA library. 
 It can be exploited either as a stand alone Java application running  *SSONDEv1.SemSim* or as a library developing third parties application. Below the former is discussed and  data is  expected to be available in a RDF dump or in one of the supported JENA store. Further information on how load data in SSONDE are available  at [How to download the RDF statements](http://code.google.com/p/ssonde/wiki/RDF_statements_download).
@@ -138,29 +139,30 @@ An example of configuration file, where the semantic similarity is:
   * loading some RDF schemas, "http://www.w3.org/2004/02/skos/core#"; 
   * assessing the similarity according to the context defined in conf/EChallenges2011/skosHabitatWRTSpeciesContext.ctx;
   * The output results are written in the CVS file conf/EChallenges2011/skosHabitatWRTSpeciesContext.cvs.
-          { 
-          "StoreConfiguration":{
-          "KindOfStore":"JENATDB",
-          "RDFDocumentURIs":[
-             "http://www.w3.org/2004/02/skos/core#",
-             "http://www.w3.org/2000/01/rdf-schema#",
-             "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-             "http://www.w3.org/2002/07/owl#"
-          ],
-          "TDBDirectory":"data/EUNISIMATI/TDB-0.8.9/"
-          },
-            "ContextConfiguration":{
-                "ContextFilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.ctx"
-             },
-           "InstanceConfiguration":{
-              "InstanceURIsClass":"application.EChallenges2011.InstancesForEUNISSimilarityEchallenges"
-            },
-          "OutputConfiguration":{
-             "KindOfOutput":"CVSFile",
-             "FilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.cvs"
-           }
-        }
+     
 
+	     { 
+	          "StoreConfiguration":{
+	          "KindOfStore":"JENATDB",
+	          "RDFDocumentURIs":[
+	             "http://www.w3.org/2004/02/skos/core#",
+	             "http://www.w3.org/2000/01/rdf-schema#",
+	             "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+	             "http://www.w3.org/2002/07/owl#"
+	          ],
+	          "TDBDirectory":"data/EUNISIMATI/TDB-0.8.9/"
+	          },
+	            "ContextConfiguration":{
+	                "ContextFilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.ctx"
+	             },
+	           "InstanceConfiguration":{
+	              "InstanceURIsClass":"application.EChallenges2011.InstancesForEUNISSimilarityEchallenges"
+	            },
+	          "OutputConfiguration":{
+	             "KindOfOutput":"CVSFile",
+	             "FilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.cvs"
+	           }
+	        }
 
 
 ### How to specify a context
