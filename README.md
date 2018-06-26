@@ -3,14 +3,14 @@
 SSONDE is a framework to assess context dependent and asymmetric similarity on entities exposed on the linked data. It is developed in Java relying on JENA library. 
 It can be exploited either as a stand alone Java application running  *SSONDEv1.SemSim* or as a library developing third parties application. Below the former is discussed and  data is  expected to be available in a RDF dump or in one of the supported JENA store. Further information on how load data in SSONDE are available  at [http://code.google.com/p/ssonde/wiki/RDF_statements_download  "How to download the RDF statements"].
 
-  * [http://code.google.com/p/ssonde/wiki/GettingStarted#Using_SSONDE_for_the_first_time Using SSONDE for the first time]
-     * [http://code.google.com/p/ssonde/wiki/GettingStarted#Software_requirements  Software requirements]
-     * [http://code.google.com/p/ssonde/wiki/GettingStarted#Downloading Downloading]
-     * [http://code.google.com/p/ssonde/wiki/GettingStarted#How_to_run_SSONDE How to run SSONDE]
-  * [http://code.google.com/p/ssonde/wiki/GettingStarted#How_to_write_a_configuration_file_for_SSONDE How to write a configuration file for SSONDE]
-     * [http://code.google.com/p/ssonde/wiki/GettingStarted#JSON_Configuration_file JSON Configuration file] 
-     * [http://code.google.com/p/ssonde/wiki/GettingStarted#How_to_specify_a_context How to specify a context]
-     * [http://code.google.com/p/ssonde/wiki/GettingStarted#Output_formats Output formats]
+  *  [Using SSONDE for the first time](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#Using_SSONDE_for_the_first_time)
+     * [Software requirements](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#GettingStarted#Software_requirements)
+     * [Downloading](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#Downloading)
+     * [How to run SSONDE](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#How_to_run_SSONDE) 
+  * [How to write a configuration file for SSONDE](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#How_to_write_a_configuration_file_for_SSONDE)
+     * [JSON Configuration file](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#JSON_Configuration_file) 
+     * [How to specify a context](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#How_to_specify_a_context)
+     * [Output formats](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#Output_formats)
 
 ## Using SSONDE for the first time
 
