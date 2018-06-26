@@ -202,54 +202,54 @@ The output formats supported are CVS file and JSON.
  * When *CVS File* is selected in the configuration file a similarity matrix is produced as CVS, the first two columns represent the instance URIs (namespace and identifier respectively) and the similarity values follow in the other columns.
  * When *JSONOrderedResult* is selected the resulting JSON is in the following form
 
-    [
-       {
-          "URI":"uriA1"      //first parameter in the similarity assessment  Sim(uriA1,
-          uri??)
-      "Result":[
-             {
-                "Val":"1",
-                //double between 0 and 1 representing the similarity Sim(uriA1,
-                uriB1) result 
-    	     "URI":"uriB1"            //uriB1 is the most similar instance to  
-    	                     uriA1
-             },
-             ...         {
-                "Val":0.0945,
-                //double between 0 and 1 representing the       
-    	                     similarity Sim(uriA1,
-                uriBn) result
-    	     "URI":"uriBn"            //uriBn is the n most similar instance to
-    	                      uriA
-             }
-          ],
-    
-       },
-       ....   {
-          "URI":"uriAm” //first parameter in the similarity 
-                      assessment Sim(uriAm,uri??)
-      "      Result":[
-             {
-                "Val":"1",
-                //double between 0 and 1 representing the
-                       similarity Sim(uriAm,
-                uriC1) result 
-         "URI":"uriC1"            //uriC1 is the most similar instance to  
-                         uriaAm
-             },
-             ...         {
-                "Val":0.0945,
-                //double between 0 and 1 representing the       
-                         similarity Sim(uriAm,
-                uriCn) result
-         "URI":"uribBn"            //uriBn is the n most similar instance to
-                          uriAm
-             }
-          ],
-    
-       },
-    
-    ]
+	    [
+	       {
+	          "URI":"uriA1"      //first parameter in the similarity assessment  Sim(uriA1,
+	          uri??)
+	      "Result":[
+	             {
+	                "Val":"1",
+	                //double between 0 and 1 representing the similarity Sim(uriA1,
+	                uriB1) result 
+	    	     "URI":"uriB1"            //uriB1 is the most similar instance to  
+	    	                     uriA1
+	             },
+	             ...         {
+	                "Val":0.0945,
+	                //double between 0 and 1 representing the       
+	    	                     similarity Sim(uriA1,
+	                uriBn) result
+	    	     "URI":"uriBn"            //uriBn is the n most similar instance to
+	    	                      uriA
+	             }
+	          ],
+	    
+	       },
+	       ....   {
+	          "URI":"uriAm” //first parameter in the similarity 
+	                      assessment Sim(uriAm,uri??)
+	      "      Result":[
+	             {
+	                "Val":"1",
+	                //double between 0 and 1 representing the
+	                       similarity Sim(uriAm,
+	                uriC1) result 
+	         "URI":"uriC1"            //uriC1 is the most similar instance to  
+	                         uriaAm
+	             },
+	             ...         {
+	                "Val":0.0945,
+	                //double between 0 and 1 representing the       
+	                         similarity Sim(uriAm,
+	                uriCn) result
+	         "URI":"uribBn"            //uriBn is the n most similar instance to
+	                          uriAm
+	             }
+	          ],
+	    
+	       },
+	    
+	    ]
 
 After preparing the configuration file, it is always advisable to validate its syntactical correctness by using one of the services available on internet (an example of JSON validator/formatter is available at http://jsonformatter.curiousconcept.com/.
 
@@ -263,7 +263,7 @@ Albertoni, R., & De Martino, M. (2010). _Semantic Similarity and Selection of Re
 
 ### Albertoni & De Martino, 2011
 Albertoni, R., & De Martino, M. (2011). _Semantic Technology to Exploit Digital Content Exposed as Linked Data_. In P. Cunningham & M. Cunningham (Eds.), eChallenges e-2011 (pp. 1-8). IIMC International Information Management Corporation, 2011 ISBN: 978-1-905824-27-4.
- 
+
 
 
 
