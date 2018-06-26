@@ -1,7 +1,7 @@
 
 # GETTING STARTED USING SSONDE
 SSONDE is a framework to assess context dependent and asymmetric similarity on entities exposed on the linked data. It is developed in Java relying on JENA library. 
-It can be exploited either as a stand alone Java application running  *SSONDEv1.SemSim* or as a library developing third parties application. Below the former is discussed and  data is  expected to be available in a RDF dump or in one of the supported JENA store. Further information on how load data in SSONDE are available  at [http://code.google.com/p/ssonde/wiki/RDF_statements_download  "How to download the RDF statements"].
+It can be exploited either as a stand alone Java application running  *SSONDEv1.SemSim* or as a library developing third parties application. Below the former is discussed and  data is  expected to be available in a RDF dump or in one of the supported JENA store. Further information on how load data in SSONDE are available  at [How to download the RDF statements](http://code.google.com/p/ssonde/wiki/RDF_statements_download).
 
   *  [Using SSONDE for the first time](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#Using_SSONDE_for_the_first_time)
      * [Software requirements](https://github.com/riccardoAlbertoni/ssonde/blob/master/README.md#GettingStarted#Software_requirements)
