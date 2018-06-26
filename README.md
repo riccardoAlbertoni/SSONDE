@@ -19,9 +19,9 @@ It can be exploited either as a stand alone Java application running  *SSONDEv1.
 The semantic similarity is developed in Java. In order to run it, the Java Run Time 1.6.0 or the Java Development Kit (JDK) must be installed (download Java at http://www.java.com/en/download/index.jsp).
 
 ### Downloading 
-The easiest way to get the SSONDE code is through SVN typing 
+The easiest way to get the SSONDE code is to clone this rep
 
-    svn checkout http://ssonde.googlecode.com/svn/SSONDEv1 SSONDEv1 
+    git clone https://github.com/riccardoAlbertoni/ssonde.git 
 
 In that way, you get 4GB including some JENA datastores for testing the code.
 
