@@ -138,9 +138,8 @@ An example of configuration file, where the semantic similarity is:
   * loading some RDF schemas, "http://www.w3.org/2004/02/skos/core#"; 
   * assessing the similarity according to the context defined in conf/EChallenges2011/skosHabitatWRTSpeciesContext.ctx;
   * The output results are written in the CVS file conf/EChallenges2011/skosHabitatWRTSpeciesContext.cvs.
-
-    {
-       "StoreConfiguration":{
+          { 
+          "StoreConfiguration":{
           "KindOfStore":"JENATDB",
           "RDFDocumentURIs":[
              "http://www.w3.org/2004/02/skos/core#",
@@ -149,27 +148,24 @@ An example of configuration file, where the semantic similarity is:
              "http://www.w3.org/2002/07/owl#"
           ],
           "TDBDirectory":"data/EUNISIMATI/TDB-0.8.9/"
-       },
-       "ContextConfiguration":{
-         "ContextFilePath":"conf/EChallenges2011/
-                             skosHabitatWRTSpeciesContext.ctx"
-       },
-       "InstanceConfiguration":{
-          "InstanceURIsClass":"application.EChallenges2011.
-                         InstancesForEUNISSimilarityEchallenges"
-       },
-       "OutputConfiguration":{
-          "KindOfOutput":"CVSFile",
-          "FilePath":"conf/EChallenges2011/
-                      skosHabitatWRTSpeciesContext.cvs"
-       }
-    }
+          },
+            "ContextConfiguration":{
+                "ContextFilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.ctx"
+             },
+           "InstanceConfiguration":{
+              "InstanceURIsClass":"application.EChallenges2011.InstancesForEUNISSimilarityEchallenges"
+            },
+          "OutputConfiguration":{
+             "KindOfOutput":"CVSFile",
+             "FilePath":"conf/EChallenges2011/skosHabitatWRTSpeciesContext.cvs"
+           }
+        }
+
 
 
 ### How to specify a context
 The context specification text pointed by the !ContextFilePath  in the Jason Object !ContextConfiguration is specified according to the format introduced in ([http://code.google.com/p/ssonde/wiki/GettingStarted#Albertoni_&_De_Martino,_2008 Albertoni & De Martino, 2008]), and adapted for considering multiples RDF/OWL vocabularies in [http://code.google.com/p/ssonde/wiki/GettingStarted#Albertoni_&_De_Martino,_2010 Albertoni & De Martino, 2010]. 
 A context in a text file is shaped as in the following:
-
 
     PREFIX namespaceA: <urlA>
     PREFIX namespaceB: <urlB>
