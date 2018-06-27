@@ -265,7 +265,7 @@ Albertoni, R., & De Martino, M. (2010). _Semantic Similarity and Selection of Re
 Albertoni, R., & De Martino, M. (2011). _Semantic Technology to Exploit Digital Content Exposed as Linked Data_. In P. Cunningham & M. Cunningham (Eds.), eChallenges e-2011 (pp. 1-8). IIMC International Information Management Corporation, 2011 ISBN: 978-1-905824-27-4.
 
 ### Albertoni & De Martino, 2012
-Albertoni R.,De Martino M., SSONDE: Semantic Similarity on LiNked Data Entities, MTSR 2012: Metadata and Semantics Research pp 25-36
+Albertoni R.,De Martino M., _SSONDE: Semantic Similarity on LiNked Data Entities_, MTSR 2012: Metadata and Semantics Research pp 25-36
 Series:	Communications in Computer and Information Science, Dodero J.M., Palomo-Duarte	M., Karampiperis P. (Ed.) vol 343, 2012,	 Softcover ISBN:978-3-642-35232-4, Doi:10.1007/978-3-642-35233-1_3 [preprint](http://pers.ge.imati.cnr.it/albertoni/PersonalPage/src/MTSR2012.pdf)
 
 
