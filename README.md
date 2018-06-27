@@ -256,16 +256,17 @@ After preparing the configuration file, it is always advisable to validate its s
 ## References 
 
 ### Albertoni & De Martino, 2008 
-Albertoni, R., & De Martino, M. (2008). _Asymmetric and context-dependent semantic similarity among ontology instances_, Journal on Data Semantics X. (S. Spaccapietra, Ed.) J. Data Semantics (Vol. 4900, pp. 1-30). Berlin, Heidelberg: Springer Berlin Heidelberg. doi:10.1007/978-3-540-77688-8 [preprint](http://www.ima.ge.cnr.it/ima/personal/albertoni/PersonalPage/src/JodsX.pdf)
+Albertoni, R., & De Martino, M. (2008). _Asymmetric and context-dependent semantic similarity among ontology instances_, Journal on Data Semantics X. (S. Spaccapietra, Ed.) J. Data Semantics (Vol. 4900, pp. 1-30). Berlin, Heidelberg: Springer Berlin Heidelberg. doi:10.1007/978-3-540-77688-8 [preprint](http://pers.ge.imati.cnr.it/albertoni/PersonalPage/src/JodsX.pdf)
 
 ### Albertoni & De Martino, 2010 
-Albertoni, R., & De Martino, M. (2010). _Semantic Similarity and Selection of Resources Published According to Linked Data Best Practice_, On the Move to Meaningful Internet Systems: OTM 2010 Workshops. (R. Meersman, T. Dillon, & P. Herrero, Eds.)OTM Workshops (Vol. 6428, pp. 378-383). Berlin, Heidelberg: Springer Berlin Heidelberg. doi:10.1007/978-3-642-16961-8  [preprint](http://saturno.ge.imati.cnr.it/ima/personal/albertoni/PersonalPage/src/OntoContent2010.pdf)
+Albertoni, R., & De Martino, M. (2010). _Semantic Similarity and Selection of Resources Published According to Linked Data Best Practice_, On the Move to Meaningful Internet Systems: OTM 2010 Workshops. (R. Meersman, T. Dillon, & P. Herrero, Eds.)OTM Workshops (Vol. 6428, pp. 378-383). Berlin, Heidelberg: Springer Berlin Heidelberg. doi:10.1007/978-3-642-16961-8  [preprint](http://pers.ge.imati.cnr.it/albertoni/PersonalPage/src/OntoContent2010.pdf)
 
 ### Albertoni & De Martino, 2011
 Albertoni, R., & De Martino, M. (2011). _Semantic Technology to Exploit Digital Content Exposed as Linked Data_. In P. Cunningham & M. Cunningham (Eds.), eChallenges e-2011 (pp. 1-8). IIMC International Information Management Corporation, 2011 ISBN: 978-1-905824-27-4.
 
-
-
+### Albertoni & De Martino, 2012
+Albertoni R.,De Martino M., SSONDE: Semantic Similarity on LiNked Data Entities, MTSR 2012: Metadata and Semantics Research pp 25-36
+Series:	Communications in Computer and Information Science, Dodero J.M., Palomo-Duarte	M., Karampiperis P. (Ed.) vol 343, 2012,	 Softcover ISBN:978-3-642-35232-4, Doi:10.1007/978-3-642-35233-1_3 [preprint](http://pers.ge.imati.cnr.it/albertoni/PersonalPage/src/MTSR2012.pdf)
 
 
 
